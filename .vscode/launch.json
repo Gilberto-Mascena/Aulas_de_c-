@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    
+        
+        {
+            "name": "(lldb) Anexar",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.out",
+            "processId": "${command:pickProcess}",
+            "MIMode": "lldb"
+        },
+        {
+            "name": "C/C++: cpp Compilar e depurar o arquivo ativo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: cpp arquivo de build ativo"
+        }
+    ]
+}
